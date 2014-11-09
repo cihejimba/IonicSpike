@@ -1,0 +1,12 @@
+
+Install:
+- Ionic 	sudo npm install -g cordova ionic
+- Xcode 	app store
+- Gulp 		sudo npm install -g gulp
+- iOS sim 	npm install -g ios-sim
+
+Init project:
+- ionic start IonicSpike sidemenu
+- ionic platform add ios
+- ionic build ios
+- ionic emulate ios --target="iPad (Retina)"
