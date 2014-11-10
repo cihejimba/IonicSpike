@@ -3,7 +3,8 @@ define(function (require) {
 
     var angular = require('angular');
 
-    return angular.module('events', [])
-        .directive('events', require('./EventDirective'))
-        .service('photoService', require('../services/PhotoService'));
+    return angular.module('economy', [])
+        .directive('economy', require('./EconomyDirective'))
+        .directive('economyChart', require('./EconomyChartDirective'))
+        .service('economyService', require('./EconomyService'));
 });

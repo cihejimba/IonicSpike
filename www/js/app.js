@@ -6,6 +6,7 @@ define(function (require) {
     });
 
     return {
-        'application': require('./application/AppModule')
+        'application': require('./application/AppModule'),
+        'economy': require('./economy/EconomyModule')
     };
 });

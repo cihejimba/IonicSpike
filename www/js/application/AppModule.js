@@ -4,7 +4,8 @@ define(function (require) {
     var angular = require('angular');
 
     var deps = [
-        'ionic'
+        'ionic',
+        'economy'
     ];
 
     angular.module('application', deps)

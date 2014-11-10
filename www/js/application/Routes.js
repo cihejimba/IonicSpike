@@ -23,7 +23,7 @@ define(function () {
                 url: "/economy",
                 views: {
                     'menuContent' :{
-                        templateUrl: "js/economy/economy.html"
+                        template: "<div economy></div>"
                     }
                 }
             })
