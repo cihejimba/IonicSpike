@@ -5,6 +5,8 @@
         "ionic": "driftyco/ionic-bower#1.0.0-beta.13",
         "requirejs": "~2.1.15",
         "text": "~2.0.10",
-        "d3": "3.4.13"
+        "d3": "3.4.13",
+        "angular": "1.2.25",
+        "angular-ui-router": "~0.2.10"
     }
 }

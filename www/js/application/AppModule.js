@@ -2,16 +2,18 @@ define(function (require) {
     'use strict';
 
     var angular = require('angular');
+    var uiRouter = require('uiRouter');
+    var ionicAngular = require('ionicAngular');
 
     var deps = [
         'ionic',
-        'economy'
+        require('./economy/EconomyModule').name
     ];
 
-    angular.module('application', deps)
+    return angular.module('application', deps)
 
-        .directive('application', require('./AppDirective'))
-        .config(require('./Routes'))
+        .directive('application', require('./application/AppDirective'))
+        .config(require('./application/Routes'))
 
         .run(function($ionicPlatform) {
             $ionicPlatform.ready(function() {
@@ -25,6 +27,6 @@ define(function (require) {
                     StatusBar.styleDefault();
                 }
             });
-        })
+        });
 
 });
