@@ -8,6 +8,7 @@ requirejs.config({
         ionicAngular:     '../lib/ionic/js/ionic-angular.min',
         text:             '../lib/text/text',
         d3:               '../lib/d3/d3.min',
+        d3xter:           '../lib/d3xter/js/lib',
         app:              'application/AppModule'
     },
     shim: {
@@ -17,7 +18,8 @@ requirejs.config({
         uiRouter : {deps: ['angular']},
         ionic :  {deps: ['angular'], exports : 'ionic'},
         ionicAngular: {deps: ['angular', 'ionic', 'uiRouter', 'angularAnimate', 'angularSanitize']},
-        d3: {exports: 'd3'}
+        d3: {exports: 'd3'},
+        d3xter: {exports: 'd3xtr'}
     },
     priority: [
         'angular',

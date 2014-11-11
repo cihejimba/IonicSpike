@@ -1,8 +1,8 @@
 define(function () {
     'use strict';
 
-    //var ENDPOINT = 'http://www.quandl.com/api/v1/datasets/ODA/AUS_NGDP_R.json?column=1';
-    var ENDPOINT = 'http://localhost:8100/data/economy.json';
+    var ENDPOINT = 'http://www.quandl.com/api/v1/datasets/ODA/AUS_NGDP_R.json?column=1';
+    //var ENDPOINT = 'http://localhost:8100/data/economy.json';
 
     function EconomyService($q, $http) {
 

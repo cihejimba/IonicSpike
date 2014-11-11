@@ -4,11 +4,15 @@
     </ion-nav-buttons>
     <ion-content class="has-header">
 
-        <h4>{{model.economyData.name}}</h4>
+        <h4 ng-bind="model.economyData.name"></h4>
 
         <p>{{model.economyData.description}}</p>
 
         <economy-chart chart-data="model.economyData.data"></economy-chart>
+
+        <div id="histo-container"></div>
+        <div id="line-container"></div>
+        <div id="scatter-container"></div>
 
     </ion-content>
 </ion-view>
