@@ -14,7 +14,7 @@ define(function () {
                 url: "/headlines",
                 views: {
                     'menuContent' :{
-                        //templateUrl: "js/headlines/headlines.html"
+                        template: "<div headlines></div>"
                     }
                 }
             })
@@ -32,13 +32,13 @@ define(function () {
                 url: "/markets",
                 views: {
                     'menuContent' :{
-                        //templateUrl: "templates/markets.html"
+                        template: "<div markets></div>"
                     }
                 }
             });
 
         // if none of the above states are matched, use this as the fallback
-        $urlRouterProvider.otherwise('/app/economy');
+        $urlRouterProvider.otherwise('/app/headlines');
     }
 
     Routes.$inject = ['$stateProvider', '$urlRouterProvider'];

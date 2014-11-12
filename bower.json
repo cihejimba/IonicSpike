@@ -8,6 +8,7 @@
         "d3": "~3.4.13",
         "d3xter": "~1.0.5",
         "angular": "1.2.25",
-        "angular-ui-router": "~0.2.10"
+        "angular-ui-router": "~0.2.10",
+        "angular-resource": "~1.3.2"
     }
 }

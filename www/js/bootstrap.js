@@ -10,7 +10,7 @@ define(function (require) {
             angular.bootstrap(document, [app.name]);
         };
 
-    document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener('deviceready', onDeviceReady, false);
 
     if (typeof cordova === 'undefined') {
         $html = angular.element(document.getElementsByTagName('html')[0]);

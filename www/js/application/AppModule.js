@@ -2,12 +2,16 @@ define(function (require) {
     'use strict';
 
     var angular = require('angular');
+    var angularResource = require('angularResource');
     var uiRouter = require('uiRouter');
     var ionicAngular = require('ionicAngular');
 
     var deps = [
         'ionic',
-        require('./economy/EconomyModule').name
+        'ngResource',
+        require('./economy/EconomyModule').name,
+        require('./headlines/HeadlinesModule').name,
+        require('./markets/MarketsModule').name
     ];
 
     return angular.module('application', deps)
