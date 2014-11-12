@@ -5,7 +5,10 @@ define(function () {
 
     function HeadlinesService($resource) {
 
-        return $resource(ENDPOINT, { callback: 'JSON_CALLBACK' }, { get: { method: 'JSONP' }});
+        return $resource(ENDPOINT,
+            { callback: 'JSON_CALLBACK' },
+            { get: { method: 'JSONP' }
+        });
 
     }
 

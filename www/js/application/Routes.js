@@ -19,6 +19,15 @@ define(function () {
                 }
             })
 
+            .state('app.story', {
+                url: "/headlines/:storyId",
+                views: {
+                    'menuContent' :{
+                        templateUrl: "js/headlines/story.html"
+                    }
+                }
+            })
+
             .state('app.economy', {
                 url: "/economy",
                 views: {

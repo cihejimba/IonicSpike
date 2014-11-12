@@ -5,7 +5,7 @@
     <ion-content class="has-header" padding="true">
 
         <ion-list>
-            <ion-item ng-repeat="headline in headlines.responseData.results">
+            <ion-item ng-repeat="headline in headlines.responseData.results" href="#/app/headlines/{{$index}}">
                 {{headline.titleNoFormatting}}
             </ion-item>
         </ion-list>
